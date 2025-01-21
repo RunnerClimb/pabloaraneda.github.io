@@ -1,145 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Araneda - Portfolio</title>
+    <title>Portafolio - Pablo Araneda</title>
     <style>
-        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #3498db, #8e44ad);
-            color: #fff;
+            background-color: #f4f4f4;
         }
         header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
         }
         header h1 {
-            font-size: 3rem;
             margin: 0;
         }
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0 0;
-        }
         nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         nav a {
             color: #fff;
+            margin: 0 10px;
             text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            transition: background 0.3s;
         }
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.5);
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 1.1rem;
-            line-height: 1.5;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .project-card {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .project-card h3 {
-            font-size: 1.5rem;
-            margin: 15px;
-        }
-        .project-card p {
-            font-size: 1rem;
-            margin: 0 15px 15px;
-            line-height: 1.4;
+        section h2 {
+            margin-top: 0;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0.7);
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        footer p {
-            font-size: 0.9rem;
-            margin: 0;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Pablo Araneda</h1>
-        <p>Ingeniero de Software | Creativo | Innovador</p>
+        <p>Desarrollador de Software | Analista Programador</p>
         <nav>
-            <a href="#about">Sobre Mí</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
-    <section id="about" class="section">
+    <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>
-            Soy un desarrollador con experiencia en tecnologías modernas como Spring Boot, React, .NET, y mucho más. 
-            Me apasiona resolver problemas complejos y crear soluciones innovadoras.
-        </p>
+        <p>Soy un desarrollador responsable, comprometido y creativo, con experiencia en tecnologías modernas como .NET, Spring Boot, Angular, y React. Me apasiona resolver problemas complejos y crear soluciones innovadoras.</p>
     </section>
 
-    <section id="projects" class="section">
-        <h2>Proyectos Destacados</h2>
-        <div class="projects">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto. Tecnologías usadas: React, Node.js, Docker.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto. Tecnologías usadas: Angular, Spring Boot.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto. Tecnologías usadas: .NET, SQL Server.</p>
-            </div>
-        </div>
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+            <li><strong>Ingeniero de Software - Cygnus</strong> (Enero 2024 - Febrero 2024)<br>Creación de servicios REST con .NET, desarrollo Frontend y documentación con Swagger.</li>
+            <li><strong>Ingeniero de Software II - Catena</strong> (Septiembre 2023 - Diciembre 2023)<br>Microservicios con Spring Boot, desarrollo Frontend con React y uso de Docker.</li>
+            <li><strong>Ingeniero de Software - Altia</strong> (Junio 2023 - Agosto 2023)<br>Desarrollo Backend con Node.js y Frontend con React.</li>
+        </ul>
     </section>
 
-    <section id="contact" class="section">
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Lenguajes: JavaScript, TypeScript, Node.js, .NET, Java</li>
+            <li>Frontend: Angular, React, Bootstrap</li>
+            <li>Backend: Spring Boot, SQL Server, MySQL</li>
+            <li>Herramientas: Git, Docker, Jenkins</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
         <h2>Contacto</h2>
-        <p>¡Hablemos! Puedes contactarme a través de:</p>
         <p>Email: <a href="mailto:pabloaraneda32@gmail.com">pabloaraneda32@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/pabloaraneda" target="_blank">linkedin.com/in/pabloaraneda</a></p>
+        <p>Teléfono: (+56) 9 2247 4997</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/pabloaraneda" target="_blank">linkedin.com/in/pabloaraneda</a></p>
     </section>
 
     <footer>
